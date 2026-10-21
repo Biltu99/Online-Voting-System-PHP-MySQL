@@ -4,58 +4,6 @@ A simple PHP + MySQL online voting system for college elections.
 ## 📂 Location
 `C:\xampp_new\htdocs\VotingSystemCollegeAssign`
 
-Project Structure: 
-C:\xampp_new\htdocs\VotingSystemCollegeAssign\ 
-│ 
-├── index.php                  # Homepage 
-├── register.php               # Voter registration 
-├── login.php                
-  # Voter login 
-├── logout.php              
-├── dashboard.php       
-   # Logout 
-       # 
-Voter dashboard 
-├── vote.php                   # Voting page 
-├── results.php                # Public results 
-├── profile.php                # Voter profile 
-├── admin_login.php    
-        # 
-Admin login 
-├── admin_dashboard.php        # Admin dashboard 
-├── admin_profile.php          # Admin profile 
-├── manage_candidates.php      # Admin: candidates 
-├── manage_elections.php       # Admin: elections 
-├── voters.php                 # Admin: voter list 
-├── export_results.php         # Admin: CSV export 
-├── health.php                 # System health check 
-│ 
-├── config/ 
-│   └── db.php              
-│ 
-├── includes/ 
-│   
-├── functions.php          
-│   
-   # PDO connection + auto-status 
-# Helpers (e, csrf_token, flash) 
-├── auth.php               # is_logged_in, require_voter, require_admin 
-│   
-├── header.php             # Shared header + nav 
-│   └── footer.php             # Shared footer 
-│ 
-├── assets/ 
-│   
-├── css/style.css          # All styles 
-│   
-├── js/script.js         
-│   └── images/parties/      
-│ 
-└── database/ 
-  # Client JS 
-  # Party logos 
-└── online_voting_college_assign.sql
-
 ## 🗄️ Database
 - Name: `online_voting_college_assign`
 - Import: `database/online_voting_college_assign.sql`
@@ -164,3 +112,54 @@ Can't login as admin	Make sure role = 'admin' in users table
 Election not showing	Check start_time / end_time in phpMyAdmin
 Vote button disabled	Ensure election status is open or current time is within range
 
+Project Structure: 
+C:\xampp_new\htdocs\VotingSystemCollegeAssign\ 
+│ 
+├── index.php                  # Homepage 
+├── register.php               # Voter registration 
+├── login.php                
+  # Voter login 
+├── logout.php              
+├── dashboard.php       
+   # Logout 
+       # 
+Voter dashboard 
+├── vote.php                   # Voting page 
+├── results.php                # Public results 
+├── profile.php                # Voter profile 
+├── admin_login.php    
+        # 
+Admin login 
+├── admin_dashboard.php        # Admin dashboard 
+├── admin_profile.php          # Admin profile 
+├── manage_candidates.php      # Admin: candidates 
+├── manage_elections.php       # Admin: elections 
+├── voters.php                 # Admin: voter list 
+├── export_results.php         # Admin: CSV export 
+├── health.php                 # System health check 
+│ 
+├── config/ 
+│   └── db.php              
+│ 
+├── includes/ 
+│   
+├── functions.php          
+│   
+   # PDO connection + auto-status 
+# Helpers (e, csrf_token, flash) 
+├── auth.php               # is_logged_in, require_voter, require_admin 
+│   
+├── header.php             # Shared header + nav 
+│   └── footer.php             # Shared footer 
+│ 
+├── assets/ 
+│   
+├── css/style.css          # All styles 
+│   
+├── js/script.js         
+│   └── images/parties/      
+│ 
+└── database/ 
+  # Client JS 
+  # Party logos 
+└── online_voting_college_assign.sql
