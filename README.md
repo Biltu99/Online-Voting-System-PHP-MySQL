@@ -1,4 +1,4 @@
-# Online Voting System - College Assignment
+# Online Voting System 
 A simple PHP + MySQL online voting system for college elections.
 
 ## 📂 Location
